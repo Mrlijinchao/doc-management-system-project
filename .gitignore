@@ -64,4 +64,8 @@ docker/
 docs/
 images/
 
+mvnw
+.mvn
+mvnw.cmd
+HELP.md
 

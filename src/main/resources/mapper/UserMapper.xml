@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lijinchao.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.lijinchao.entity.User">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <id property="statusCd" column="status_cd" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="identityCode" column="identity_code" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="BIGINT"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="nativePlace" column="native_place" jdbcType="VARCHAR"/>
+            <result property="subject" column="subject" jdbcType="VARCHAR"/>
+            <result property="education" column="education" jdbcType="VARCHAR"/>
+            <result property="school" column="school" jdbcType="VARCHAR"/>
+            <result property="graduationYear" column="graduation_year" jdbcType="VARCHAR"/>
+            <result property="statusDate" column="status_date" jdbcType="TIMESTAMP"/>
+            <result property="createDate" column="create_date" jdbcType="TIMESTAMP"/>
+            <result property="createStaff" column="create_staff" jdbcType="BIGINT"/>
+            <result property="updateDate" column="update_date" jdbcType="TIMESTAMP"/>
+            <result property="updateStaff" column="update_staff" jdbcType="BIGINT"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
+            <result property="otherId" column="other_id" jdbcType="BIGINT"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="birthtime" column="birthtime" jdbcType="TIMESTAMP"/>
+            <result property="lastlogin" column="lastLogin" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,status_cd,name,
+        code,password,identity_code,
+        sex,phone,email,
+        native_place,subject,education,
+        school,graduation_year,status_date,
+        create_date,create_staff,update_date,
+        update_staff,remark,is_deleted,
+        other_id,description,birthtime,
+        lastLogin
+    </sql>
+</mapper>
